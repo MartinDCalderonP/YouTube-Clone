@@ -1,0 +1,60 @@
+.videoRow {
+    display: flex;
+    margin: 0px 0px 30px 16px;
+}
+
+.videoRow > img {
+    object-fit: contain;
+    width: 360px;
+    height: 200px;
+}
+
+.videoRow__text {
+    margin-left: 14px;
+}
+
+.videoRow__text > h3 {
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.videoRow__headline{
+    font-size: 12px;
+    color: #606060;
+    margin-bottom: 15px;
+}
+
+.videoRow__channel {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #606060;
+}
+
+.videoRow__avatar {
+    height: 24px !important;
+    width: 24px !important;
+    margin-right: 5px;
+}
+
+.videoRow__checkCircleIcon {
+    width: 13px !important;
+    color: #606060;
+    margin-left: 5px;
+}
+
+.videoRow__description {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #606060;
+}
+
+.videoRow__newVideo{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 3px;
+    color: #606060;
+    background-color: #ececec;
+}

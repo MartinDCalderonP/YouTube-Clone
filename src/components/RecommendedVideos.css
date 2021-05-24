@@ -1,0 +1,28 @@
+.recommendedVideos {
+    flex: 0.82;
+    background-color: #f9f9f9;
+}
+
+.recommendedVideos__chips {
+    background-color: white;
+    padding: 12px 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.recommendedVideos__chip {
+    background-color: #f2f2f2 !important;
+    font-size: 0.9rem !important;
+    margin-right: 12px;
+}
+
+.recommendedVideos__chip.selected {
+    background-color: #606060 !important;
+    color: #fff;
+}
+
+.recommendedVideos__videos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 0px 24px 22px;
+}

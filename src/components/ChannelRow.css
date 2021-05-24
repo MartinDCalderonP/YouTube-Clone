@@ -1,0 +1,35 @@
+.channelRow {
+    display: flex;
+    align-items: center;
+}
+
+.channelRow__logo {
+    height: 132px !important;
+    width: 132px !important;
+    margin: 10px 120px;
+}
+
+.channelRow__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 120px;
+    width: 50%;
+}
+
+.channelRow__text > h4 {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.channelRow__checkCircleIcon{
+    margin-left: 5px;
+    width: 16px !important;
+    color: #606060;
+}
+
+.channelRow__text > p{
+    color: #606060;
+    font-size: small !important;
+}
