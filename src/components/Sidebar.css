@@ -1,11 +1,26 @@
 .sidebar {
-    flex: 0.183;
-    padding: 14px 0px;
+	min-width: 240px;
+	padding: 14px 0px 14px;
+	background-color: var(--body);
+	transition-duration: 0ms;
 }
 
 .sidebar > hr {
-    height: 1px;
-    border: 0;
-    background-color: lightgray;
-    margin: 10px 0px;
+	height: 1px;
+	border: 0;
+	background-color: var(--itemHoverAndHr);
+	margin: 10px 5px 10px 0px;
+}
+
+.sidebar.minimized {
+	min-width: 68px;
+	max-width: 68px;
+}
+
+.sidebar.minimized h2, .sidebar.minimized .MuiTypography-body1 {
+	display: none;
+}
+
+.sidebar.minimized .themeSwitch {
+	padding-left: 18px;
 }

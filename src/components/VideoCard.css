@@ -1,42 +1,117 @@
 .videoCard {
-    margin-bottom: 40px;
-    width: 270px;
+	margin: 0px 8px 32px;
+	width: 250px;
+	position: relative;
+}
+
+.videoCard.related {
+	display: flex;
+}
+
+.videoCard a {
+	text-decoration: none;
 }
 
 .videoCard__thumbnail {
-    height: 140px;
-    width: 250px;
+	height: 140px;
+	width: 250px;
+}
+
+.videoCard__duration {
+	display: inline;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	position: absolute;
+	top: 120px;
+	right: 5px;
+	font-size: 0.8rem;
+	font-weight: 500;
+	padding: 1px 3px;
 }
 
 .videoCard__info {
-    display: flex;
-    margin-top: 10px;
-    padding-right: 30px;
+	display: flex;
+	margin-top: 10px;
+}
+
+.videoCard__info.related {
+	margin: 0px;
+	padding: 0px;
+}
+
+.videoCard__avatarLink {
+	height: fit-content;
 }
 
 .videoCard__avatar {
-    height: 30px !important;
-    width: 30px !important;
+	height: 30px !important;
+	width: 30px !important;
 }
 
 .videoCard__text {
-    margin-left: 15px;
+	margin-left: 15px;
+}
+
+.videoCard__text.related {
+	width: 150px;
 }
 
 .videoCard__text > h4 {
-    font-size: 14px;
-    margin-bottom: 5px;
-    letter-spacing: .25px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	font-size: 14px;
+	letter-spacing: 0.25px;
+	line-height: 20px;
+}
+
+.videoCard__title {
+	text-decoration: none;
+	color: var(--letters);
+}
+
+.videoCard__channel:hover {
+	color: var(--letters);
+}
+
+.videoCard__channel {
+	font-size: 14px;
+	color: var(--grayLetters);
+	width: auto;
 }
 
 .videoCard__text > p {
-    font-size: 14px;
-    color: #606060;
-    display: flex;
-    align-items: center;
+	margin-top: -5px;
+	font-size: 14px;
+	color: var(--grayLetters);
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-.videoCard__checkCircleIcon{
-    margin-left: 5px;
-    width: 13px !important;
+.videoCard__statistics {
+	height: 30px;
+}
+
+.videoCard__statistics > span {
+	margin-right: 3px;
+}
+
+.videoCard__live {
+	display: inline-block;
+	color: #c00;
+	border: 1px solid #c00;
+	border-radius: 2px;
+	padding: 2px 4px;
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.35px;
+}
+
+.videoCard__dot {
+	font-size: 25px;
+	margin: 0px 3px;
+}
+
+.videoCard__textSkeleton {
+	width: 200px;
 }

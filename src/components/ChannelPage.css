@@ -1,0 +1,109 @@
+.channelPage {
+	width: auto;
+	background-color: var(--innerBody);
+}
+
+.channelPage__limitExceeded {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	font-size: 20px;
+	color: darkred;
+	width: 80vw;
+}
+
+.channelPage__cover {
+	width: 100%;
+	height: 145px;
+	background-position: center;
+	background-size: cover;
+}
+
+.channelPage__info {
+	display: flex;
+	align-items: center;
+}
+
+.channelPage__avatar {
+	height: 80px !important;
+	width: 80px !important;
+	margin: 10px 25px;
+}
+
+.channelPage__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 52px;
+	color: var(--letters);
+}
+
+.channelPage__subs {
+	font-size: 0.9rem;
+	color: var(--grayLetters);
+}
+
+.channelPage__subs > span {
+	margin-right: 3px;
+}
+
+.channelPage__tabsDiv {
+	display: flex;
+	justify-content: center;
+	padding: 0px 24px;
+}
+
+.channelPage__tabsList {
+	color: var(--grayLetters);
+	display: flex;
+	max-width: 100vw;
+}
+
+.channelPage__tabsList .MuiTabs-flexContainer {
+	overflow-x: scroll !important;
+	justify-content: flex-start !important;
+}
+
+.channelPage__tabsList button:hover {
+	opacity: 1;
+}
+
+.channelPage__tabsList button.Mui-selected {
+	color: var(--letters);
+}
+
+.channelPage__tabsList > div > span {
+	background-color: var(--grayLetters);
+}
+
+.channelPage__circularProgress {
+	display: flex;
+	justify-content: center;
+	margin: 20px 30px 0px 0px;
+}
+
+.channelPage__videos {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 24px 0px;
+	justify-content: center;
+}
+
+@media (max-width: 1280px) {
+	.channelPage__tabsList {
+		max-width: 85vw;
+	}
+}
+
+@media (max-width: 960px) {
+	.channelPage__tabsList {
+		max-width: 80vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.channelPage__tabsList {
+		max-width: 70vw;
+	}
+}

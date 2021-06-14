@@ -1,35 +1,85 @@
 .channelRow {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
-.channelRow__logo {
-    height: 132px !important;
-    width: 132px !important;
-    margin: 10px 120px;
+.channelRow a {
+	text-decoration: none;
+}
+
+.channelRow__avatar {
+	height: 136px !important;
+	width: 136px !important;
+	margin: 10px 120px;
 }
 
 .channelRow__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 120px;
-    width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 120px;
+	margin-right: 50px;
 }
 
-.channelRow__text > h4 {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
+.channelRow__text > h3 {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	color: var(--letters);
 }
 
-.channelRow__checkCircleIcon{
-    margin-left: 5px;
-    width: 16px !important;
-    color: #606060;
+.channelRow__text > p {
+	display: flex;
+	align-items: center;
+	color: var(--grayLetters);
+	font-size: small !important;
 }
 
-.channelRow__text > p{
-    color: #606060;
-    font-size: small !important;
+.channelRow__statistics {
+	flex-wrap: wrap;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+.channelRow__statistics > span {
+	margin-right: 3px;
+}
+
+.channelRow__dot {
+	font-size: 25px;
+	margin: 0px 3px;
+}
+
+.channelRow__textSkeleton {
+	width: 400px;
+}
+
+.channelRow__textSkeleton:first-child {
+	height: 40px;
+}
+
+.channelRow__textSkeleton:last-child {
+	margin-top: -10px;
+}
+
+@media (max-width: 960px) {
+	.channelRow__avatar {
+		margin: 10px 50px;
+	}
+}
+
+@media (max-width: 600px) {
+	.channelRow {
+		padding: 10px 0px;
+	}
+
+	.channelRow__avatar {
+		height: 100px !important;
+		width: 100px !important;
+		margin: 10px 10px;
+	}
+
+	.channelRow__text {
+		margin-right: 20px;
+	}
 }

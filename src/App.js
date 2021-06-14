@@ -1,34 +1,65 @@
+import React, { useState } from 'react';
 import './App.css';
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import SearchPage from "./components/SearchPage";
-import RecommendedVideos from "./components/RecommendedVideos";
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import RecommendedVideos from './components/RecommendedVideos';
+import SearchPage from './components/SearchPage';
+import ChannelPage from './components/ChannelPage';
+import VideoPage from './components/VideoPage';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function App() {
-  return (
-    <div className="app">
-      <Router>
-        <Header />
-        
-        <Switch>
-          <Route path='/results'>
-            <div className='app__page'>
-              <Sidebar />
-              <SearchPage />
-            </div>
-          </Route>
+	const [modifySidebar, setModifySidebar] = useState(false);
 
-          <Route path='/'>
-            <div className='app__page'>
-              <Sidebar />
-              <RecommendedVideos />
-            </div>
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
+	const onSidebarMini = (sidebarMini) => {
+		if (sidebarMini === true) {
+			setModifySidebar(true);
+		} else {
+			setModifySidebar(false);
+		}
+	};
+
+	return (
+		<HelmetProvider>
+			<Helmet>
+				<title>YouTube</title>
+			</Helmet>
+			<div className="app">
+				<Router>
+					<Header handleSidebarMinimize={onSidebarMini} />
+					<Switch>
+						<Route path="/video/:videoId">
+							<div className="app__page">
+								<VideoPage hideSidebar={modifySidebar} />
+							</div>
+						</Route>
+
+						<Route path="/channel/:channelId">
+							<div className="app__page">
+								<Sidebar minimize={modifySidebar} />
+								<ChannelPage />
+							</div>
+						</Route>
+
+						<Route path="/results">
+							<div className="app__page">
+								<Sidebar minimize={modifySidebar} />
+								<SearchPage />
+							</div>
+						</Route>
+
+						<Route path="/">
+							<div className="app__page">
+								<Sidebar minimize={modifySidebar} />
+								<RecommendedVideos />
+							</div>
+						</Route>
+					</Switch>
+				</Router>
+			</div>
+		</HelmetProvider>
+	);
 }
 
 export default App;

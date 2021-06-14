@@ -1,28 +1,76 @@
 .recommendedVideos {
-    flex: 0.82;
-    background-color: #f9f9f9;
+	width: auto;
+	background-color: var(--innerBody);
 }
 
-.recommendedVideos__chips {
-    background-color: white;
-    padding: 12px 24px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.recommendedVideos__chipsDiv {
+	background-color: var(--body);
+	padding: 12px 24px;
+	border-top: 1px solid var(--itemHoverAndHr);
+	border-bottom: 1px solid var(--itemHoverAndHr);
+	display: flex;
+	justify-content: center;
+}
+
+.recommendedVideos__chipsDiv.related {
+	border: 0px;
+}
+
+.recommendedVideos__chipsList {
+	overflow-y: hidden;
+	display: flex;
+	max-width: 100vw;
 }
 
 .recommendedVideos__chip {
-    background-color: #f2f2f2 !important;
-    font-size: 0.9rem !important;
-    margin-right: 12px;
+	background-color: var(--chip) !important;
+	color: var(--letters) !important;
+	font-size: 0.9rem !important;
+	margin-right: 12px;
 }
 
-.recommendedVideos__chip.selected {
-    background-color: #606060 !important;
-    color: #fff;
+.recommendedVideos__chip:first-child {
+	background-color: var(--letters) !important;
+	color: var(--body) !important;
+}
+
+.recommendedVideos__limitExceeded {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	font-size: 20px;
+	color: darkred;
+	width: 80vw;
 }
 
 .recommendedVideos__videos {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 24px 0px 24px 22px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 24px 0px;
+}
+
+.recommendedVideos__videos.related {
+	background-color: var(--body);
+	justify-content: flex-start;
+	padding-left: 20px;
+}
+
+@media (max-width: 1280px) {
+	.recommendedVideos__chipsList {
+		max-width: 85vw;
+	}
+}
+
+@media (max-width: 960px) {
+	.recommendedVideos__chipsList {
+		max-width: 80vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.recommendedVideos__chipsList {
+		max-width: 70vw;
+	}
 }

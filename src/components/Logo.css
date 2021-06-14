@@ -1,0 +1,9 @@
+.logo__letter {
+    fill: var(--logo);
+}
+
+@media (max-width: 600px) {
+    .logo__letter {
+        display: none;
+    }
+}

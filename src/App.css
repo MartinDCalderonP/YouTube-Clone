@@ -1,3 +1,53 @@
+:root {
+	--body: #ffffff;
+	--innerBody: #f9f9f9;
+	--letters: #030303;
+	--grayLetters: #606060;
+	--headerIcons: #606060;
+
+	--logo: #000000;
+
+	--searchBorder: #d3d3d3;
+	--searchButton: #f8f8f8;
+	--searchBorderHover: #c6c6c6;
+	--searchButtonHover: #f0f0f0;
+	--searchIconHover: #000000;
+	--searchBackground: #ffffff;
+	--placeholder: default;
+
+	--itemHoverAndHr: #e5e5e5;
+	--sidebarIcon: #606060;
+	--sidebarSelectedIcon: #ff0000;
+	--chip: #f2f2f2;
+	--newVideo: #ececec;
+	--linkColor: #065fd4;
+}
+
+[data-theme='dark'] {
+	--body: #212121;
+	--innerBody: #181818;
+	--letters: #ffffff;
+	--grayLetters: #aaaaaa;
+	--headerIcons: #ffffff;
+
+	--logo: #ffffff;
+
+	--searchBorder: #303030;
+	--searchButton: #323232;
+	--searchBorderHover: #303030;
+	--searchButtonHover: #323232;
+	--searchIconHover: #999999;
+	--searchBackground: #121212;
+	--placeholder: #e4e4e4;
+
+	--itemHoverAndHr: #383838;
+	--sidebarIcon: #909090;
+	--sidebarSelectedIcon: #ffffff;
+	--chip: #373737;
+	--newVideo: #303030;
+	--linkColor: #3ea6ff;
+}
+
 .app__page {
-  display: flex;
+	display: flex;
 }

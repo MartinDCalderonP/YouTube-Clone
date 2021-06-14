@@ -1,0 +1,148 @@
+.videoPage {
+	width: 100vw;
+	height: 480px;
+}
+
+.videoPage__limitExceeded {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	font-size: 20px;
+	color: darkred;
+	width: 80vw;
+}
+
+.videoPage__body {
+	display: flex;
+	padding: 16px 32px;
+	background-color: var(--body);
+}
+
+.videoPage__info {
+	flex: 0.65;
+}
+
+.videoPage__info > h3 {
+	color: var(--letters);
+}
+
+.videoPage__relatedVideos {
+	flex: 0.35;
+}
+
+.videoPage__headline {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.9rem;
+	color: var(--grayLetters);
+	margin-top: 8px;
+	border-bottom: 1px solid var(--itemHoverAndHr);
+	padding-bottom: 8px;
+}
+
+.videoPage__headline p {
+	display: flex;
+	align-items: center;
+}
+
+.videoPage__headline p span {
+	margin-right: 3px;
+}
+
+.videoPage__dot {
+	font-size: 25px;
+	margin: 0px 3px;
+}
+
+.videoPage__icons {
+	display: flex;
+	align-items: center;
+}
+
+.videoPage__icons div {
+	display: flex;
+	align-items: center;
+}
+
+.videoPage__icons svg {
+	margin: 0px 8px 0px 16px;
+}
+
+.videoPage__replyIcon {
+	transform: scaleX(-1);
+}
+
+.videoPage__channelInfo {
+	display: flex;
+	margin-top: 16px;
+}
+
+.videoPage__channelInfo a {
+	width: fit-content;
+	height: fit-content;
+	text-decoration: none;
+}
+
+.videoPage__avatar {
+	width: 48px !important;
+	height: 48px !important;
+}
+
+.videoPage__description {
+	display: flex;
+	flex-direction: column;
+	padding: 8px 16px;
+}
+
+.videoPage__channelTitle {
+	font-size: 0.9rem;
+	color: var(--letters);
+}
+
+.videoPage__channelSubs {
+	font-size: 0.8rem;
+	color: var(--grayLetters);
+}
+
+.videoPage__videoDescription {
+	padding: 24px 0px;
+	font-size: 0.9rem;
+	color: var(--grayLetters);
+}
+
+.videoPage__videoDescription a {
+	color: var(--linkColor);
+}
+
+.videoPage__circularProgress {
+	display: flex;
+	justify-content: center;
+	margin: 20px 30px 0px 0px;
+}
+
+@media (max-width: 1280px) {
+	.videoPage__info {
+		flex: 1;
+	}
+}
+
+@media (max-width: 960px) {
+	.videoPage__info h3 {
+		text-align: center;
+	}
+
+	.videoPage__headline {
+		justify-content: center;
+	}
+
+	.videoPage__headline p {
+		display: none;
+	}
+
+	.videoPage__icons {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

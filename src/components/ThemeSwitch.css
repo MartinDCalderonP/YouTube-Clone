@@ -1,0 +1,21 @@
+.themeSwitch {
+	padding-left: 20px;
+}
+
+.themeSwitch:hover {
+	background-color: var(--itemHoverAndHr);
+	cursor: pointer;
+}
+
+.themeSwitch .MuiTypography-body1 {
+	font-size: 0.9rem;
+	color: var(--letters);
+}
+
+.MuiSwitch-colorSecondary.Mui-checked {
+	color: darkgray !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+	background-color: black !important;
+}

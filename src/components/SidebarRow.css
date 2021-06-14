@@ -5,29 +5,21 @@
 }
 
 .sidebarRow:hover {
-	background-color: lightgray;
+	background-color: var(--itemHoverAndHr);
 	cursor: pointer;
 }
 
-.sidebarRow:hover > .sidebarRow__icon {
-	color: red;
-}
-
-.sidebarRow:hover > .sidebarRow__title {
-	font-weight: bold;
-}
-
 .sidebarRow__icon {
-	color: #606060;
+	color: var(--sidebarIcon);
 	font-size: 1.4rem;
 }
 
 .sidebarRow.selected {
-	background-color: lightgray;
+	background-color: var(--itemHoverAndHr);
 }
 
 .sidebarRow.selected > .sidebarRow__icon {
-	color: red;
+	color: var(--sidebarSelectedIcon);
 }
 
 .sidebarRow.selected > .sidebarRow__title {
@@ -39,4 +31,5 @@
 	margin-left: 24px;
 	font-size: 0.9rem;
 	font-weight: 100;
+	color: var(--letters);
 }

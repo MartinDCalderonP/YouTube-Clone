@@ -1,30 +1,66 @@
 .searchPage {
-    flex: 0.82;
-    background-color: #f9f9f9;
+	width: auto;
+	background-color: var(--innerBody);
 }
 
 .searchPage__filter {
-    display: flex;
-    align-items: center;
-    color: #606060;
-    font-size: xx-small !important;
-    letter-spacing: 1px;
-    margin: 22px 0px 0px 16px;
+	display: flex;
+	align-items: center;
+	color: var(--grayLetters);
+	font-size: xx-small !important;
+	letter-spacing: 1px;
+	margin: 22px 0px 0px 16px;
 }
 
 .searchPage__filter > h2 {
-    text-transform: uppercase;
-    margin-left: 10px;
+	text-transform: uppercase;
+	margin-left: 8px;
 }
 
-.searchPage > hr {
-    height: 1px;
-    border: 0;
-    background-color: lightgray;
-    margin: 10px 0px 10px 16px;
+.searchPage hr {
+	height: 1px;
+	border: 0;
+	background-color: var(--itemHoverAndHr);
+	margin: 10px 0px 10px 16px;
 }
 
-.searchPage > h4 {
-    color: #030303;
-    margin: 25px 0px 25px 16px;
+.searchPage__limitExceeded {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	font-size: 20px;
+	color: darkred;
+	width: 80vw;
+}
+
+.seachPage__videos {
+	padding-left: 16px;
+}
+
+.seachPage__videos > hr {
+	margin-left: 0px;
+}
+
+.searchPage__mostRecent {
+	font-size: 1rem;
+	margin: 25px 0px;
+	color: var(--letters);
+}
+
+@media (max-width: 600px) {
+	.searchPage hr {
+		margin-left: 0px;
+	}
+
+	.seachPage__videos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0px;
+	}
+
+	.seachPage__videos > hr {
+		align-self: normal;
+	}
 }
