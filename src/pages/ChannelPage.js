@@ -5,14 +5,14 @@ import Avatar from '@material-ui/core/Avatar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import VideoCard from './VideoCard';
+import VideoCard from '../components/VideoCard';
 import useNumberFormat from '../hooks/useNumberFormat';
 import { useParams } from 'react-router-dom';
 import useYouTubeChannels from '../hooks/useYouTubeChannels';
 import useYouTubeSearch from '../hooks/useYouTubeSearch';
 import useYouTubeVideos from '../hooks/useYouTubeVideos';
 
-function ChannelPage() {
+export default function ChannelPage() {
 	const { channelId } = useParams();
 	const { channelsData } = useYouTubeChannels(channelId);
 	const { searchData } = useYouTubeSearch(null, channelId);
@@ -118,5 +118,3 @@ function ChannelPage() {
 		</div>
 	);
 }
-
-export default ChannelPage;

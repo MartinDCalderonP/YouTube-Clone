@@ -1,15 +1,15 @@
 import React from 'react';
 import './SearchPage.css';
 import TuneOutlinedIcon from '@material-ui/icons/TuneOutlined';
-import ChannelRow from './ChannelRow';
-import VideoRow from './VideoRow';
+import ChannelRow from '../components/ChannelRow';
+import VideoRow from '../components/VideoRow';
 import { Helmet } from 'react-helmet-async';
 import { useStateValue } from '../stateProvider/StateProvider';
 import useYouTubeSearch from '../hooks/useYouTubeSearch';
 import useYouTubeVideos from '../hooks/useYouTubeVideos';
 import useYouTubeChannels from '../hooks/useYouTubeChannels';
 
-function SearchPage() {
+export default function SearchPage() {
 	// eslint-disable-next-line
 	const [{ term }, dispatch] = useStateValue();
 	const { searchData } = useYouTubeSearch(term);
@@ -102,5 +102,3 @@ function SearchPage() {
 		</div>
 	);
 }
-
-export default SearchPage;

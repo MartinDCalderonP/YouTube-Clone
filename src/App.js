@@ -3,13 +3,13 @@ import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import RecommendedVideos from './components/RecommendedVideos';
-import SearchPage from './components/SearchPage';
-import ChannelPage from './components/ChannelPage';
-import VideoPage from './components/VideoPage';
+import SearchPage from './pages/SearchPage';
+import ChannelPage from './pages/ChannelPage';
+import VideoPage from './pages/VideoPage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-function App() {
+export default function App() {
 	const [modifySidebar, setModifySidebar] = useState(false);
 
 	const onSidebarMini = (sidebarMini) => {
@@ -61,5 +61,3 @@ function App() {
 		</HelmetProvider>
 	);
 }
-
-export default App;

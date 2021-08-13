@@ -1,6 +1,6 @@
 import React from 'react';
 import './VideoPage.css';
-import RecommendedVideos from './RecommendedVideos';
+import RecommendedVideos from '../components/RecommendedVideos';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
@@ -21,7 +21,7 @@ import useYouTubeChannels from '../hooks/useYouTubeChannels';
 import useDarkTheme from '../hooks/useDarkTheme';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-function VideoPage() {
+export default function VideoPage() {
 	useDarkTheme();
 	const lgBreakpoint = useMediaQuery('(max-width:1280px)');
 
@@ -137,5 +137,3 @@ function VideoPage() {
 		</div>
 	);
 }
-
-export default VideoPage;
