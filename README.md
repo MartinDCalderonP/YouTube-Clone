@@ -1,6 +1,6 @@
 # YouTube Clone
 
-This YouTube clone is made with ReactJS, Material UI, Custom Hooks for use the YouTube API, format some date and numbers and use Dark Theme & Context for use the search term. It is responsive and is deployed on Firebase: [https://clone-6c8d2.web.app/](https://clone-6c8d2.web.app/)
+This YouTube clone is made with ReactJS, Material UI, Custom Hooks for use the YouTube API, format some date and numbers and use Dark Theme & Context for use the search term. The styles are on CSS, it is responsive and is deployed on Firebase: [https://clone-6c8d2.web.app/](https://clone-6c8d2.web.app/)
 
 # Things that are working now
 
