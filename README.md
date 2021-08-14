@@ -21,7 +21,11 @@ The Channel Page shows channels details, cover image and twenty videos of the ch
 There is a lot of things that can be added to be a full YouTube clone, but the ones that have priority are:
 
 Mantain the data from the API to reduce the API calls.
+
 Infinite Scroll for the videos.
+
 Login with a YouTube account.
+
 Filters in Home Page and Search Page.
+
 Related videos on Video Page.
