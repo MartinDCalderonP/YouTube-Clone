@@ -34,5 +34,6 @@ overrides:
   tar@<=7.5.3: '>=7.5.4'
   tar@<=7.5.9: '>=7.5.10'
   underscore@<=1.13.7: '>=1.13.8'
+  uuid@<14.0.0: '>=14.0.0'
   webpack-dev-middleware@<=5.3.3: '>=5.3.4'
   webpack-dev-server@<=5.2.0: '>=5.2.1'
