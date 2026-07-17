@@ -28,6 +28,7 @@ minimumReleaseAgeExclude:
   - uuid@11.1.1
   - '@babel/core@7.29.1'
   - linkify-it@5.0.1
+  - websocket-driver@0.7.5
 overrides:
   '@babel/core@<=7.29.0': ^7.29.1
   '@tootallnate/once@<2.0.1': ^2.0.1
@@ -77,3 +78,4 @@ overrides:
   webpack-dev-server@<5.2.5: ^5.2.5
   webpack-dev-server@<=5.2.0: ^5.2.1
   webpack-dev-server@<=5.2.3: ^5.2.4
+  websocket-driver@<0.7.5: ^0.7.5
